@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* background-image: url("Gym.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-wrap: wrap; */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("Gym.jpg");
+    background-size: cover;
+    background-position: center;
+    /* color: white; */
+    text-align: center;
+    padding: 5rem 1rem;
+
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.services,
+.classes,
+.trainers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service,
+.class,
+.trainer {
+    flex: 1 1 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
