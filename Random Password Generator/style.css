@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: skyblue;
+    margin: 0;
+}
+
+#generator-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#generator-container h2 {
+    margin-bottom: 20px;
+}
+
+#password {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    word-break: break-all;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 5px;
+}
+
+#generate {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#copy {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#length-container {
+    margin: 20px 0;
+}
