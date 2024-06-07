@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        #login-container, #gallery-container {
+            display: none;
+            background: #fff;
+            padding: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            
+        }
+
+        #login-container.active, #gallery-container.active {
+            display: block;
+        }
+        
+
+        input[type="password"], input[type="file"] {
+            width: calc(100% - 20px);
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 20px 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .gallery-item {
+            display: none;
+            position: relative;
+            margin: 10px 0;
+        }
+
+        .gallery-item img, .gallery-item video {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .delete-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #dc3545;
+            color: #fff;
+            cursor: pointer;
+            font-size: 0.8rem;
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div id="login-container" class="active">
+    <h1>Enter Password</h1>
+    <input type="password" id="password" placeholder="Password">
+    <button id="login-button">Login</button>
+</div>
+
+<div id="gallery-container">
+    <h2>Gallery</h2>
+    <input type="file" id="file-input" accept="image/*,video/*" multiple>
+    <button id="add-button">Add to Gallery</button>
+    <div id="gallery"></div>
+    <div class="navigation-buttons">
+        <button id="prev-button">Previous</button>
+        <button id="next-button">Next</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
